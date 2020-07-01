@@ -1,0 +1,137 @@
+---
+title: "Racer Lab"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+library(dplyr)
+library(readr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+ 
+ 
+## **Introduction**
+
+In this lab, you will be playing an online racing game. **Your goal is to determine whether the Bayes car or the Gauss car is faster.** Each car you select can be raced multiple times on a track and the time to complete each race will be recorded. After you race the cars, the data will be available for you to analyze.
+
+In the game, you will need to input a Player ID. This will be on the internet, so you probably do not want to use a name that will identify you. Your instructor will give you a Group ID, which will be identical for every person in the class. You will be asked to record your Player ID, so be sure to remember it.
+
+To play Racer, click on the **Racer Game tab.**
+
+First, click on the Tutorial button and complete the tutorial. After playing the tutorial, move on to Task #1. 
+
+
+## **Racer Game**
+
+<iframe src="https://www.stat2games.sites.grinnell.edu/games/racer2020.html" width= "100%" height=670></iframe>
+
+
+
+## **Task #1: Designing an Experiment**
+
+Work with your nearest neighbor, and **design an experiment** that outlines the data collection strategy that you will implement to determine whether the Bayes car or the Gauss car is faster
+on the oval track. Each person in your class will play the game to collect this data. Your data collection strategy should allow you to conduct a hypothesis test.  
+
+
+#### **Questions**
+
+1. State the null and alternative hypotheses, in words or symbols. Before stating the hypothesis think carefully how you plan to analyze the data that will be collected.
+
+2. What is the explanatory variable?   
+
+3. What is the response variable?
+
+4. What are the units for the data?
+
+5. What data specifically needs to be recorded with each race?
+
+6. What is the sample size?
+
+
+#### **Confounding Variable Information**
+
+In order to evaluate whether the car speeds are truly different, we should take into account possible **confounding variables** (variables that the researcher did not include in the
+study but that might be connected to both the independent variable and the dependent variable). For example, some race tracks are longer than others. We want to hold the track constant for everyone in your experiment to ensure that the type of track does not bias our results. Are there any other potential confounding variables that might get in the way of determining which car is faster?
+
+
+#### **As a Class**
+
+Decide on the exact protocol (instructions) for the experiment to generate the data. You need clear instructions so you can run the experiment the same every time.  Write down the final instructions to collect data for this study.  Specifically discuss how you will control for the potential confounding variables. If collecting data outside of class, clearly identify the timeframe for collecting data.
+
+
+## **Task #2: Collect the Data**
+
+Go to the **Racer Game tab**. Ensure that you have the ***correct*** Player ID and Group ID.
+
+* **Follow the protocol decided upon for the class.**
+* Click the Select Car button on the main menu
+* Use the pull down menu on the top right to select a car. Then select Next.
+* Use the red arrows to select the Oval Track. Select the Race button.
+* Use the arrow keys to race the car.
+
+
+## **Task #3: Examination and Analysis**
+
+<iframe src="https://rsakc.shinyapps.io/RacerApp/" width= "100%" height=600></iframe>
+
+\
+
+Select the following options to help you compare the finish times of the Bayes and Gauss cars:
+
+* Group ID [Find your Group ID]
+* Level: Choose Car
+* Player ID: All
+* Track: Oval
+* X Axis: Body
+* Y Variable: Finish Time (or whatever variable you selected as your response variable)
+
+\
+
+
+#### **Data Visualizations**
+
+* Does this graph evidence that a particular car is faster than the others? Briefly explain any patterns that you see. Sketch the most useful graph here.   
+
+* Change the X Variable: Order. This is the order in which each car was raced for each player. If you see any patterns in this graph, describe the patterns, and explain why you think the pattern exists.
+
+* Change the X Variable:  PlayerID. Do you see clear differences between players? How does this affect your
+analysis?
+
+* Were there any outliers or unusual observations in this data? Did some games take an unusually long time to complete? Should the outliers be removed or kept within the dataset? Why?
+
+* *Examine the data. Were there any people who did not play the game the correct number of times?  Can their data be included? Were there people who played the game using the same car?  What do you do with their data?* ***Decide as a class, with your teacher taking notes, which data to use and what variable you will analyze.***
+
+* Explain whether you should use a two‐sample t‐test or a paired t‐test for this experiment.
+
+* What is the final sample size available for your class’ matched pairs data?  
+
+* If you end up with a small sample size, it is particularly important to remember what assumptions are required to conduct a paired t‐test?  
+
+* How can you check that assumption using your calculator or computer?  
+
+* What should you do if the needed assumption is not met?
+
+\
+
+#### **Data Analysis**
+
+* If the data collections was conducted properly, you can use the Shiny app above to analyze your data. However, if you data was not properly collected, your instructor will provide a cleaned
+dataset for you. Use the data to conduct a test and make a decision about if there is a difference in the population average finishing time of the Bayes and Gauss cars.   
+
+* Provide the test statistic and corresponding p‐value:
+
+* Give the 95% confidence interval
+
+* What conclusions can you draw about this experiment? Clearly state your **overall** recommendation to someone wanting to win a race on the oval track.
+
+\
+
+***To receive credit for this lab, you must complete the evaluation using the link below.*** 
+
+[Evaluation Link](https://grinnell.co1.qualtrics.com/jfe/form/SV_0p4Cz8T1dveoAdf) 
+
+
+
+
