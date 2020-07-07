@@ -16,11 +16,42 @@ knitr::opts_chunk$set(echo = FALSE)
 
 In this lab, you will be playing an online racing game. **Your goal is to determine whether the Bayes car or the Gauss car is faster.** Each car you select can be raced multiple times on a track and the time to complete each race will be recorded. After you race the cars, the data will be available for you to analyze.
 
-In the game, you will need to input a Player ID. This will be on the internet, so you probably do not want to use a name that will identify you. Your instructor will give you a Group ID, which will be identical for every person in the class. You will be asked to record your Player ID, so be sure to remember it.
+In the game, you will need to input a **Player ID.** This will be on the internet, so you probably do not want to use a name that will identify you. Your instructor will give you a **Group ID**, which will be identical for every person in the class. 
 
-To play Racer, click on the **Racer Game tab.**
+**Name:**
 
-First, click on the Tutorial button and complete the tutorial. After playing the tutorial, move on to Task #1. 
+**Player ID:**
+
+**Group ID:**
+
+
+
+To play Racer, click on the **Racer Game tab.** First, click on the **Tutorial** button and complete the tutorial. Record the car and your finish times below:
+
+
+
+After you have completed the Racer Tutorial Game, use the following settings in the app below:
+
+* Enter the **Group ID** for your class.
+* Make sure that both Level and Track say **Tutorial**
+* X Axis: **Body**
+* Y Axis: **Finish Time**
+* Check **Add Boxplot**
+* Check **Show Summary Statistics**
+
+<iframe src="https://rsakc.shinyapps.io/RacerApp/" width= "100%" height=600></iframe>
+
+\
+
+#### **Questions**
+
+* Submit the sample size, mean, and standard deviation for your class data.
+
+* Do you believe the data shows evidence of a difference beween the speeds of the Bayes and Nightingale cars?
+
+* Estimate your level of confidence that one car is faster than another.
+
+* Explain your reasoning for the above 2 questions.
 
 
 ## **Racer Game**
@@ -28,8 +59,53 @@ First, click on the Tutorial button and complete the tutorial. After playing the
 <iframe src="https://www.stat2games.sites.grinnell.edu/games/racer2020.html" width= "100%" height=670></iframe>
 
 
+## **Evaluating the Data**
 
-## **Task #1: Designing an Experiment**
+Watch the tutorial on how to use the shiny app.
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/zU_aX2DeIQI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+\
+
+Now, use the following settings for the app.
+
+* Enter the **Group ID** for your class
+* Both Level and Track say **Tutorial**
+* Change the X-axis to **Player ID**
+* Check **Show Summary Statistics**
+
+<iframe src="https://rsakc.shinyapps.io/RacerApp/" width= "100%" height=600></iframe>
+
+\
+
+#### **Questions**
+
+
+* How many people played the game in your class?
+
+* Who was the fastest Player? What criteria did you use to determine who is fastest?
+
+* List any players in your class that you believe should be removed from the dataset before any testing is done.
+
+* If you chose to remove any players, give a brief explanation as to why they were removed.
+
+* Change the X-axis to **Body.** Submit the sample size, mean, and standard deviation for your class data (with the players you identified removed).
+
+* Change the X-axis to **Order2** (this is the order in which the races were completed). Submit the sample size, mean, and standard deviation for your class data (with the players you identified removed).
+
+* Explain why the numbers in the previous two questions are identical.
+
+* With this tutorial data, could the difference in car speeds be due to order? For example, could people who played the game two times tend to get better Finish Times the second time they race a car?
+
+* Do you believe the data shows evidence of a difference beween the speeds of the Bayes and Nightingale cars?
+
+* Estimate your level of confidence that one car is faster than another.
+
+* Explain your reasoning for the above 2 questions.
+
+
+
+## **Designing an Experiment**
 
 Work with your nearest neighbor, and **design an experiment** that outlines the data collection strategy that you will implement to determine whether the Bayes car or the Gauss car is faster
 on the oval track. Each person in your class will play the game to collect this data. Your data collection strategy should allow you to conduct a hypothesis test.  
@@ -58,39 +134,26 @@ study but that might be connected to both the independent variable and the depen
 
 #### **As a Class**
 
-Decide on the exact protocol (instructions) for the experiment to generate the data. You need clear instructions so you can run the experiment the same every time.  Write down the final instructions to collect data for this study.  Specifically discuss how you will control for the potential confounding variables. If collecting data outside of class, clearly identify the timeframe for collecting data.
+Decide on the exact protocol (instructions) for the experiment to generate the data. You need clear instructions so you can run the experiment the same every time.  Write down the final instructions to collect data for this study.  Specifically discuss how you will control for the potential confounding variables. If collecting data outside of class, clearly identify the timeframe for collecting data. Put your information below.
 
 
-## **Task #2: Collect the Data**
+## **Collect the Data**
 
-Go to the **Racer Game tab**. Ensure that you have the ***correct*** Player ID and Group ID.
-
-* **Follow the protocol decided upon for the class.**
-* Click the Select Car button on the main menu
-* Use the pull down menu on the top right to select a car. Then select Next.
-* Use the red arrows to select the Oval Track. Select the Race button.
-* Use the arrow keys to race the car.
+Go to the **Racer Game tab** and navigate to the main menu. Making sure you follow the protocol decided upon for the class, click on the Paired Test button. Then, use the pull-down menu to select which car you will race first and which car you will race second. Then select the track and hit continue.
 
 
-## **Task #3: Examination and Analysis**
+
+## **Examine and Analyze the Data**
 
 <iframe src="https://rsakc.shinyapps.io/RacerApp/" width= "100%" height=600></iframe>
 
 \
 
-Select the following options to help you compare the finish times of the Bayes and Gauss cars:
-
-* Group ID [Find your Group ID]
-* Level: Choose Car
-* Player ID: All
-* Track: Oval
-* X Axis: Body
-* Y Variable: Finish Time (or whatever variable you selected as your response variable)
+Using the Shiny App above, select the Paired level option, the Oval track option, and your Group ID to analyze your data. The X variable should be Body, and the Y variable should be your chosen response variable.
 
 \
 
-
-#### **Data Visualizations**
+#### **Data Visualizations Questions**
 
 * Does this graph evidence that a particular car is faster than the others? Briefly explain any patterns that you see. Sketch the most useful graph here.   
 
@@ -115,7 +178,7 @@ analysis?
 
 \
 
-#### **Data Analysis**
+#### **Data Analysis Questions**
 
 * If the data collections was conducted properly, you can use the Shiny app above to analyze your data. However, if you data was not properly collected, your instructor will provide a cleaned
 dataset for you. Use the data to conduct a test and make a decision about if there is a difference in the population average finishing time of the Bayes and Gauss cars.   
@@ -134,4 +197,4 @@ dataset for you. Use the data to conduct a test and make a decision about if the
 
 
 
-
+ 
